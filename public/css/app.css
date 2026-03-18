@@ -1,0 +1,250 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+  font-family: PoppinsRegular;
+}
+ul {
+  list-style-type: none;
+}
+.body-intro {
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-image: url("http://localhost:8000/images/background1.jpg");
+}
+
+.body-home {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("http://localhost:8000/images/background3.jpeg");
+}
+
+.body-inscriptions {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("http://localhost:8000/images/background3.jpeg");
+}
+
+.black-opacity {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.7);
+}
+
+.bubbleteacutelogo {
+  border-radius: 70%;
+  transition-duration: 0.5s;
+  width:50%;
+}
+
+.bubbleteacutelogo:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+.bubblemyteaintro {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divide-bbt {
+  border-color:white;
+  border-width: 0.2em;
+  position: relative;
+  opacity:1;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.row-panier {
+  margin-left:5%!important;
+  margin-right:5%!important;
+}
+
+#btn-reset {
+  width:20%;
+}
+
+#btn-edit {
+  width:20%;
+}
+
+.popups-afterbuy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-wrapper {
+  width: 100vw;
+  height: 300vh;
+  position: absolute;
+  background-size:cover;
+  top: 0;
+  left: 0;
+  background-color: #d1c58e;
+  z-index:100;
+}
+
+.loading-img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:101;
+}
+
+.loader {
+  border-radius: 70%;
+  width:300px;
+  height:300px;
+  animation: rotation 0.7s infinite linear;
+}
+
+.title-show-bbt {
+  display:flex;
+  justify-content: center;
+  position:relative;
+  text-align:center;
+  color:white;
+  margin-top:1%;
+  font-weight: bold;
+}
+
+.show-bbt-cards {
+  display: grid!important;
+  margin-left:5%!important;
+  margin-right:5%!important;
+  column-gap: 10%;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media all and (max-width:801px) {
+  .show-bbt-cards {
+    display: grid!important;
+    margin-left:5%!important;
+    margin-right:5%!important;
+    column-gap: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  margin-top:30%!important;
+  transition-duration: 1s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+
+/* ######################################## HOME  ############################################### */
+
+.bubble { /*image dimension*/
+  width: 100%;
+  margin-top: -40%;
+}
+.card-title {
+  font-size: 20px;
+  text-align: center;
+}
+.pagination-products {
+  display:flex;
+  justify-content:center;
+  width:100%;
+  margin-top:5%;
+  z-index:10;
+  position:relative;
+}
+/* ######################################## FORMULAIRE D'INSCRIPTION  ############################################### */
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  border: solid;
+}
+
+.emiliecard:hover {
+  transform: scale(1)!important;
+  transition-duration: 0!important;
+}
+
+.emiliecard:hover {
+  transform: scale(1)!important;
+  transition-duration: 0!important;
+
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+.form-outline { 
+  border: solid;
+  border-top-style:inherit ;
+  border-radius: 8px;
+  border-color: #7b7878;
+  border-spacing: 5px 1rem;
+}
+
+/* ######################################## ROTATION DU LOGO ############################################### */
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(380deg);
+  }
+}
+/* ######################################## RESPONSIVES  ############################################### */
+
+@media screen and (min-width:780px) and (max-width:1200px) {
+  .home-btn {
+    padding: 0.8rem 1rem;
+  }
+}
+
+
+/* ######################################## FOOTER ############################################### */
+footer {
+  margin-top:5%;
+  width:100%;
+  display:block;
+  position: relative;
+  bottom: 0;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+  }
+  
+  @media (min-width: 768px) {
+  .gradient-form {
+  height: 100vh !important;
+  }
+  }
+  @media (min-width: 769px) {
+  .gradient-custom-2 {
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  }
+  }
+

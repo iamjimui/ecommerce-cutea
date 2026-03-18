@@ -1,0 +1,99 @@
+.body-profilsidebar {
+    background-color: #fbfbfb;
+    z-index : 10;
+    }
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+.body-commandes {
+    background-color: #fbfbfb;
+    z-index : 10;
+}
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+
+    .body-commandes {
+        background-color: #fbfbfb;
+        z-index : 10;
+    }
+    @media (min-width: 991.98px) {
+        main {
+            padding-left: 240px;
+        }
+    }
+
+
+    /* Sidebar */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 58px 0 0; /* Height of navbar */
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+        width: 240px;
+        z-index: 600;
+    }
+}
+    
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+    
+
+.list-group-item-action.logout {
+    background-color:crimson;
+}
+
+.form-edit-profil {
+    text-align: center;
+}
+
+footer {
+    z-index : 10;
+}
+
+.profilsideform {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.commandes {
+    text-align: center;
+}
+
+.list-group {
+    transform: translate(1px,115px);
+}
+
+/* .form-outline { */
+    /* width: 40%; pour réduire la taille des champs 
+    margin: 0 auto; pour centrer
+    display: block; */
+
+    /* border: solid;
+    border-top-style:inherit ;
+    border-radius: 8px;
+    border-color: #7b7878;
+    border-spacing: 5px 1rem;
+    
+} */
+
+.btn-floating p {
+    color: black !important;
+}

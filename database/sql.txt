@@ -1,0 +1,20 @@
+=======  Recréation de la bdd  =======
+DROP DATABASE IF EXISTS cutea;
+
+======= Insertion des tailles =======
+INSERT INTO product_sizes (id, name, price) 
+VALUES (null, 'Petit', 0.0),
+(null, 'Moyen', 1.0),
+(null, 'Grand', 1.5);
+
+======= Insertion des toppings =======
+INSERT INTO toppings (id, name, price) 
+VALUES (null, 'Rien', 0.0),
+(null, 'Perles de tapioca', 0.5),
+(null, 'Mini perles de tapioca', 0.5),
+(null, 'Perles de taro', 1.3),
+(null, 'Gelée d\'herbe', 0.5),
+(null, 'Gelée de the vert', 0.5);
+
+======= Insertion des produits =======
+INSERT INTO `products` VALUES (1,'Summer Fresh x Linda','Thé vert à la pêche et Pamplemousse',6.50,'http://localhost:8000/images/bubbletea2/the_vert_peche_pamplemousse.png'),(2,'Japan Sweet x Hubert-Henri','Uji Matcha Latte aux Haricots Azuki',6.50,'http://localhost:8000/images/bubbletea2/matcha_azuki.png'),(3,'Red Cream x Florence','Description : Thé à la Fraise avec Cream Cheese',7.50,'http://localhost:8000/images/bubbletea2/the_fraise_cream_cheese.png'),(4,'The Classic One x Kévin','Description : Thé Royal Oolong au Lait',6.50,'http://localhost:8000/images/bubbletea2/royal_oolong_milk_tea.png'),(5,'The Brown Sugar X Elie','Sucre Brun Thé Noir Latte avec Cream Cheese Booba caramelisées',7.75,'http://localhost:8000/images/bubbletea2/sucre_brun_the_noir_latte_cream_cheese.png'),(8,'Sunset Cream x Anthony','Thé à la Pêche avec Cream Cheese',7.50,'http://localhost:8000/images/bubbletea2/the_peche_cream_cheese.png'),(9,'Pink Cream x Daniel','Lait Frappé aux Fraises avec Cream Cheese',7.00,'http://localhost:8000/images/bubbletea2/lait_frappe_cream_cheese.png'),(10,'Sunlight Cream','Thé à la Mangue avec Cream Cheese',7.00,'http://localhost:8000/images/bubbletea2/the_mangue_cream_cheese.png'),(11,'The Authentic One','Thé Noir au Lait Bobba',6.00,'http://localhost:8000/images/bubbletea2/royal_bubble_milk_tea.png'),(12,'The Traditional One','Thé au Lait Traditionnel avec Azuki, mini perle de Tapioca, Gelée d\'herbe',7.00,'http://localhost:8000/images/bubbletea2/the_au_lait_traditionnel_trio_de_topping.png'),(13,'Fruity Cream','Thé aux Fruits à la Crème',7.00,'http://localhost:8000/images/bubbletea2/the_fruits_cream_cheese.png'),(14,'Milky Peach','Thé Vert Latte à la Pêche',6.00,'http://localhost:8000/images/bubbletea2/the_vert_latte_a_la_peche.png');

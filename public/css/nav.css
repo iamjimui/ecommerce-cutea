@@ -1,0 +1,108 @@
+/* ######################################## NAV  ############################################### */
+.navbar-top {
+  height:100%;
+  background-color:white;
+}
+
+.navbar-top-second {
+  display:flex;
+  justify-content: space-between;
+  height:12vh;
+  background-color:#fee1e2;
+  width: 100%;
+}
+/** Gauche */
+.navbar-div-logo-left {
+  display:relative;
+  z-index:10;
+  height:100%;
+}
+
+.navbar-logo-left {
+  height:100%;
+}
+/** Milieu */
+.navbar-div-logo-center-above {
+  display:relative;
+  position:absolute;
+  height:12vh;
+  width:100%;
+}
+.navbar-div-logo-center {
+  text-align:center;
+  height:100%;
+}
+
+.navbar-logo-center {
+  height:100%;
+}
+/** Droite */
+.navbar-div-logo-right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:10;
+}
+
+.navbar-logo-right {
+  height:50%;
+}
+
+.logout-em {
+  border-radius: 145px;
+  background-color: #e6989b!important;
+}
+
+.login-em {
+  border-radius: 145px;
+  background-color: darkseagreen!important;
+}
+
+.burger-button {
+  display:none;
+  z-index:13;
+}
+
+#burger {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #e6989b;
+  z-index:12;
+  display:none;
+  animation:fill 1s ease-in-out;
+}
+
+/* ######################################## BURGER  ############################################### */
+
+@media all and (max-width:801px) {
+  .navbar-div-logo-center-above {
+    display:none;
+  }
+  .navbar-div-logo-right > a {
+    display: none;
+  }
+  .burger-button {
+    display:inline-block;
+    z-index:13;
+  }
+}
+
+@keyframes fill {
+  from {
+    top:100%;
+  }
+  to {
+    top:0;
+  }
+}
+
+@keyframes close {
+  from {
+    top:0;
+  }
+  to {
+    top:100%;
+  }
+}
